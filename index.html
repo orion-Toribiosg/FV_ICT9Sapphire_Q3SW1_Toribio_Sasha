@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Q3SW1</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+	<style type="text/css">
+	body {
+		background-color: #dbf2ff;
+	}
+	#display {
+		font-family: times new roman;
+	}
+	#show {
+		font-weight: bold;
+	}
+	</style>
+</head>
+<body>
+	<center>
+	<h1></h1>
+	<br>
+	<img src="https://static.vecteezy.com/system/resources/previews/018/878/977/non_2x/earth-globe-cartoon-isolated-light-blue-background-world-map-earth-icon-clean-and-modern-illustration-for-design-web-vector.jpg" alt= "earth" width="200" height="200">
+
+	<br><br>
+
+	<p id="display"></p>
+	<script>
+
+		var money="<h1> 100 </h1>";
+		var pound = 0.014; //As of January 15, 2025, 9:22PM
+		var baht = 0.59; //As of January 15, 2025, 9:22PM
+
+		document.getElementById('display').innerHTML = "<h3> Click Buttons Below to Convert Amount: </h3> " + money + " <h4> to designated currency! </h4>";
+
+	</script>
+	<br> 
+
+	<p id="show"></p>
+	<button type="button" class="btn btn-success" onclick="var money='100' ; pound='0.014' ;document.getElementById('show').innerHTML = money*pound;">Pounds</button>
+	<button type="button" class="btn btn-danger" onclick="var money='100' ; baht='0.59' ;document.getElementById('show').innerHTML = money*baht;">Baht</button>
+	<br><br>
+	<a href = "index.html"><button class="btn-btn-info">Refresh</button>
+
+</body>
+</html>
